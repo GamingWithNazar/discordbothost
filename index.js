@@ -9,7 +9,7 @@ const bot = new Discord.Client();
 
 const ytdl = require("ytdl-core");
 
-const ytdl = require('quick.db')
+const db = require('quick.db')
 
 //vars
 
@@ -36,7 +36,6 @@ bot.on('ready', () =>{
 
 
 //Custom Status
-
 
 module.exports = {
   name: "status",
