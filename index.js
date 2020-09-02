@@ -37,8 +37,6 @@ bot.on('ready', () =>{
 
 //Custom Status
 
-const db = require("quick.db")
-const discord = require("discord.js")
 
 module.exports = {
   name: "status",
