@@ -1,0 +1,130 @@
+//Token (DO NOT EDIT)
+
+const token = 'process.env.token';
+
+//Const require section
+
+const Discord = require('discord.js');
+const bot = new Discord.Client();
+
+const ytdl = require("ytdl-core");
+
+
+
+//vars
+
+var servers  = {};
+
+//Prefix
+
+const PREFIX = '!';
+
+
+//What to put in the log
+
+bot.on('ready', () =>{
+    console.log('This bot is online.');
+});
+
+//Weather
+
+
+
+
+
+//music
+
+
+
+//Commands
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch(args[0]){
+        case 'ping':
+            message.reply('pong!');
+            break;
+    }
+
+});
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch(args[0]){
+        case 'help':
+            message.reply('Say "!who made this?" for info on who made this. Say "!can I add you?" for info if I can.   Say "!are you hosted 24/7?" and it will answer.   Say "!join" for the bot support and test server.   Say "!how are you?" to see how the bot is doing.    Say "!ping for a nice game of ping pong.');
+            break;
+    }
+
+});
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length);
+
+    switch(args){
+        case 'who made this?':
+            message.reply('nazar_minecraft#2538');
+            break;
+    }
+
+});
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length);
+
+    switch(args){
+        case 'can I add you?':
+            message.reply('No, sorry but if you help with the bot and show me you programming skills I might add you.');
+            break;
+    }
+
+});
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length);
+
+    switch(args){
+        case 'join':
+            message.reply('https://discord.gg/Y5bPFYf');
+            break;
+    }
+
+});
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length);
+
+    switch(args){
+        case 'how are you?':
+            message.reply('Hello, you probobly asked me this because you are interested in me. Well Im a bot currently In proggres in Microsoft Visual Studio Code. My developer, nazar_minecraft#2538 is currently in proggres of making me. And by the way to have an anwser to your question, yes Im am fine, and only online while the developer has his PC on. Hope that anwser everything. :)');
+            break;
+    }
+
+});
+
+bot.on('message', message=>{
+
+    let args = message.content.substring(PREFIX.length);
+
+    switch(args){
+        case 'are you hosted 24/7?':
+            message.reply('No I am not, but might get a hosting thingie in the future.');
+            break;
+    }
+
+});
+
+//msg commands
+
+
+//info
+
+bot.login(token);
