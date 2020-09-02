@@ -23,6 +23,8 @@ const PREFIX = '!';
 
 bot.on('ready', () =>{
     console.log('This bot is online.');
+
+    client.user.setActivity('say !help for help', { type: 'WATCHING'}).catch(console.error);
 });
 
 //Weather
@@ -35,10 +37,6 @@ bot.on('ready', () =>{
 
 
 //Custom Status
-bot.user.setStatus('online')
-
-
-bot.user.setGame('Say !help for help')
 
 //Commands
 
