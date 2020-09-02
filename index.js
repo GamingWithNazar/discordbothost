@@ -37,7 +37,10 @@ bot.on('ready', () =>{
 
 //Custom Status
 
-
+Client.on('ready', async () => {
+    await client.user.setPresence({ game: { name: 'people say !help' }, status: 'watching' });
+ });
+ 
 //Commands
 
 bot.on('message', message=>{
