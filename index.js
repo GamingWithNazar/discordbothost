@@ -9,7 +9,7 @@ const bot = new Discord.Client();
 
 const ytdl = require("ytdl-core");
 
-
+const ytdl = require('quick.db')
 
 //vars
 
