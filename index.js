@@ -37,16 +37,7 @@ bot.on('ready', () =>{
 
 //Custom Status
 
-client.on("ready", () =>{
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
-        game: {
-            name: "for people to say '!help'",  // The message shown
-            type: "WATCHING" // PLAYING, WATCHING, LISTENING, STREAMING,
-        }
-    });
- });
+
 //Commands
 
 bot.on('message', message=>{
