@@ -127,4 +127,4 @@ bot.on('message', message=>{
 
 //info
 
-bot.login(token);
+bot.login();
