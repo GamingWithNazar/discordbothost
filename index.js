@@ -104,7 +104,7 @@ bot.on('message', message=>{
 
     switch(args){
         case 'how are you?':
-            message.reply('Hello, you probobly asked me this because you are interested in me. Well Im a bot currently In proggres in Microsoft Visual Studio Code. My developer, nazar_minecraft#2538 is currently in proggres of making me. And by the way to have an anwser to your question, yes Im am fine, and only online while the developer has his PC on. Hope that anwser everything. :)');
+            message.reply('Hello, you probobly asked me this because you are interested in me. Well Im a bot currently In proggres in Microsoft Visual Studio Code. My developer, nazar_minecraft#2538 is currently in proggres of making me. And by the way to have an anwser to your question, yes Im am fine. Hope that answers everything. :)');
             break;
     }
 
@@ -116,7 +116,7 @@ bot.on('message', message=>{
 
     switch(args){
         case 'are you hosted 24/7?':
-            message.reply('No I am not, but might get a hosting thingie in the future.');
+            message.reply('Yes I am, but only run for 22 days, then I have a large downtime.');
             break;
     }
 
