@@ -1,6 +1,6 @@
 //Token (DO NOT EDIT)
 
-const token = 'process.env.token';
+
 
 //Const require section
 
@@ -127,4 +127,4 @@ bot.on('message', message=>{
 
 //info
 
-bot.login();
+bot.login(process.env.token);
