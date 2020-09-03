@@ -75,7 +75,6 @@ module.exports = {
 
 //Kick
 
-const Discord = require('discord.js');
 
 module.exports = {
     name: "kick",
@@ -120,7 +119,6 @@ module.exports = {
 }
 
 //Ban
-const Discord = require('discord.js');
 
 module.exports = {
     name: "ban",
