@@ -33,6 +33,9 @@ console.log('This bot is online.')
 
 //Custom Status
 
+
+
+
 //Commands
 
 bot.on('message', message=>{
@@ -113,7 +116,7 @@ bot.on('message', message=>{
 
     switch(args){
         case 'are you hosted 24/7?':
-            message.reply('Yes I am, but only run for 22 days, then I have a large downtime.');
+            message.reply('Yes, I am.');
             break;
     }
 
