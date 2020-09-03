@@ -6,7 +6,7 @@
 
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-
+const weather = require('weather-js');
 const ytdl = require("ytdl-core");
 
 
@@ -23,11 +23,6 @@ const PREFIX = '!';
 console.log('This bot is online.')
 
 //Weather
-
-
-const weather = require('weather-js');
-
-const Discord = require('discord.js');
 
 module.exports = {
     name: "weather",
