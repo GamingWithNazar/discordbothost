@@ -54,7 +54,7 @@ bot.on('message', message => {
             const user = message.mentions.users.first();
 
             if (user) {
-                const member = member.guild.member(user);
+                const member = message.guild.member(user);
 
                 if (member) {
                     member.kick('You were kicked from the server!').then(() => {
