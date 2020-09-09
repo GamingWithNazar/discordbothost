@@ -22,7 +22,7 @@ const PREFIX = '!';
 //What to put in the log
 bot.on('ready', () =>{
     console.log('This bot is online.');
-    bot.user.setActivity('people say "!help".');
+    bot.user.setActivity('people say "!help".', { type: WATCHING }).catch(console.error);
 })
 
 
