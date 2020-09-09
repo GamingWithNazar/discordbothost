@@ -102,7 +102,7 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case 'help':
-            message.reply('Say "!who made this?" for info on who made this. Say "!can I add you?" for info if I can.   Say "!are you hosted 24/7?" and it will answer.   Say "!join" for the bot support and test server.   Say "!how are you?" to see how the bot is doing.    Say "!ping for a nice game of ping pong.');
+            message.reply('Say "!who made this?" for info on who made this.   Say "!kick" with a mention to kick a person.      Say "!can I add you?" for info if I can.   Say "!are you hosted 24/7?" and it will answer.   Say "!join" for the bot support and test server.   Say "!how are you?" to see how the bot is doing.    Say "!ping for a nice game of ping pong.');
             break;
     }
 
