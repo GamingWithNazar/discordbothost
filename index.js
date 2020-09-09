@@ -49,7 +49,7 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case 'kick':
-            if (!args[1]) message.channel.send('So, uhh yeah, give me a mention of the person.')
+
 
             const user = message.mentions.users.first();
 
@@ -68,7 +68,7 @@ bot.on('message', message => {
                 }
 
             } else {
-                message.reply('That user isn\'t in the server.')
+                message.reply('You need to give a mention of a person.')
             }
             break;
     }
