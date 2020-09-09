@@ -20,7 +20,11 @@ const PREFIX = '!';
 
 
 //What to put in the log
-console.log('This bot is online.')
+bot.on('ready', () =>{
+    console.log('This bot is online.');
+    client.user.setActivity('people say "!help".');
+})
+
 
 //Weather
 
