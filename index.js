@@ -77,7 +77,34 @@ bot.on('message', message => {
 
 
 //Ban
+bot.on('message', message => {
 
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch (args[0]) {
+        case 'ban':
+
+
+            const user = message.mentions.users.first();
+
+            if (user) {
+                const member = message.guild.member(user);
+
+                if (member) {
+                    member.ban({ression: 'You were banned from the server'}).then(() =>{
+                        message.reply(`${user.tag} was banned from the server.`)
+                    })
+                } else {
+                    message.reply("That user isn\'t in the server.")
+                }
+
+            } else {
+                message.reply('You need to give a mention of a person.')
+            }
+            break;
+    }
+
+});
 
 
 //Commands
@@ -102,7 +129,7 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case 'help':
-            message.reply('Say "!who made this?" for info on who made this.   Say "!kick" with a mention to kick a person.      Say "!can I add you?" for info if I can.   Say "!are you hosted 24/7?" and it will answer.   Say "!join" for the bot support and test server.   Say "!how are you?" to see how the bot is doing.    Say "!ping for a nice game of ping pong.');
+            message.reply('Say "!who made this?" for info on who made this.  Say "!ban" then user mention to ban a plerson.     Say "!kick" with a mention to kick a person.      Say "!can I add you?" for info if I can.   Say "!are you hosted 24/7?" and it will answer.   Say "!join" for the bot support and test server.   Say "!how are you?" to see how the bot is doing.    Say "!ping for a nice game of ping pong.');
             break;
     }
 
