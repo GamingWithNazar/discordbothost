@@ -31,7 +31,16 @@ bot.on('ready', () => {
 //Weather
 
 
+//Greeting
 
+bot.on('guildMemberAdd', member =>{
+
+    const channel = member.guild.channel.find(channel => channel.name === "bot-greeting");
+    if(!channel) return;
+
+    channel.send(`Welcome to the support server of me, ${member}. Dont forget to read the #rules!`)
+
+});
 
 //music
 
@@ -91,7 +100,9 @@ bot.on('message', message => {
                 const member = message.guild.member(user);
 
                 if (member) {
-                    member.ban({ression: 'You were banned from the server'}).then(() =>{
+                    member.ban({
+                        ression: 'You were banned from the server'
+                    }).then(() => {
                         message.reply(`${user.tag} was banned from the server.`)
                     })
                 } else {
