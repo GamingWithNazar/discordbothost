@@ -35,7 +35,7 @@ bot.on('ready', () => {
 
 bot.on('guildMemberAdd', member =>{
 
-    const channel = member.guild.channel.find(channel => channel.name === "bot-greeting");
+    const channel = member.guild.channel.cache.find(channel => channel.name === "bot-greeting");
     if(!channel) return;
 
     channel.send(`Welcome to the support server of me, ${member}. Dont forget to read the #rules!`)
