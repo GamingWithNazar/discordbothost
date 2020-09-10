@@ -33,14 +33,19 @@ bot.on('ready', () => {
 
 //Greeting
 
-bot.on('guildMemberAdd', member =>{
+module.exports = client => {
 
-    const channel = member.guild.channel.cache.find(channel => channel.name === "bot-greeting");
-    if(!channel) return;
+    const channelId = '753463674349420694'
 
-    channel.send(`Welcome to the support server of me, ${member}. Dont forget to read the #rules!`)
+    client.on('guildMemberAdd', member => {
+        console.log(member)
 
-});
+        const messsage = `Hello <@${member.id}> please read #rules to know the rules of the server!`
+
+        const channel = member.guild.channels.cache.get(channelId)
+        channel.send(message)
+    })
+}
 
 //music
 
