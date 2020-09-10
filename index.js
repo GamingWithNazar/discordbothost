@@ -27,7 +27,7 @@ bot.on('ready', () => {
         type: "WATCHING"
     }).catch(console.error);
 
-    welcome(client)
+    welcome(bot)
 })
 
 
