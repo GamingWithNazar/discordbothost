@@ -1,5 +1,6 @@
 //Token (DO NOT EDIT)
 
+//some setup
 
 
 //Const require section
@@ -8,7 +9,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const weather = require('weather-js');
 const ytdl = require("ytdl-core");
-
+const welcome = require("./welcome")
 
 //vars
 
@@ -25,6 +26,8 @@ bot.on('ready', () => {
     bot.user.setActivity('people say "!help".', {
         type: "WATCHING"
     }).catch(console.error);
+
+    welcome(client)
 })
 
 
