@@ -11,7 +11,7 @@ const weather = require('weather-js');
 const ytdl = require("ytdl-core");
 const welcome = require("./welcome")
 
-//vars
+//variables
 
 var servers = {};
 
@@ -149,6 +149,18 @@ bot.on('message', message => {
     switch (args) {
         case 'who made this?':
             message.reply('nazar_minecraft#2538');
+            break;
+    }
+
+});
+
+bot.on('message', message => {
+
+    let args = message.content.substring(PREFIX.length);
+
+    switch (args) {
+        case 'big chungus':
+            message.reply('https://www.youtube.com/watch?v=6YDoowoYzOI');
             break;
     }
 
