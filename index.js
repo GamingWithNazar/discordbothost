@@ -220,3 +220,4 @@ bot.on('message', message => {
 //info
 
 bot.login(process.env.token);
+client.login('NzQ1MDAxMzY0MjY1ODkzOTgw.Xzralg.SA-luq_5YPaGvO58UZfOUMr84Bc');
