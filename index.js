@@ -1,11 +1,11 @@
 //Token (DO NOT EDIT)
 
 //some setup
-
+process.setMaxListeners(0);
 
 //Const require section
-
 const Discord = require('discord.js');
+const client = new Discord.Client();
 const bot = new Discord.Client();
 const weather = require('weather-js');
 const ytdl = require("ytdl-core");
@@ -142,6 +142,8 @@ bot.on('message', message => {
 
 });
 
+
+
 bot.on('message', message => {
 
     let args = message.content.substring(PREFIX.length);
@@ -219,5 +221,5 @@ bot.on('message', message => {
 
 //info
 
-bot.login(process.env.token);
-bot.login('NzQ1MDAxMzY0MjY1ODkzOTgw.Xzralg.SA-luq_5YPaGvO58UZfOUMr84Bc');
+
+bot.login('token');
