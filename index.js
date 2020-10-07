@@ -88,6 +88,7 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case 'ban':
+            if(!message.member.roles.find(r => r.name === "Bot creator") || !message.member.roles.find(r => r.name === "Refugge Moderator")) return message.channel.send('You do not have access to this command.')
 
 
             const user = message.mentions.users.first();
