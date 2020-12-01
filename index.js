@@ -1,7 +1,3 @@
-//Token (DO NOT EDIT)
-
-//some setup
-process.setMaxListeners(0);
 
 //Const require section
 const Discord = require('discord.js');
@@ -37,6 +33,15 @@ bot.on('ready', () => {
 //Greeting
 
 
+
+
+//Auto verify role
+client.on('guildMemberAdd', guildMember =>{
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Verified');
+
+    guildMember.role.add(welcomeRole);
+    guildMember.guild.channels.cache.get(783367558462963752).send(`Welcome to the server <@${guildMember.user.id}>, enjoy your stay at the Hugerefugge support server!`)
+});
 
 //music
 
