@@ -42,11 +42,6 @@ client.on('guildMemberAdd', guildMember =>{
     guildMember.guild.channels.cache.get(783367558462963752).send(`Welcome to the server <@${guildMember.user.id}>, enjoy your stay at the Hugerefugge support server!`)
 });
 
-//music
-
-
-//Custom Status
-
 
 
 //Ban/kick commands
